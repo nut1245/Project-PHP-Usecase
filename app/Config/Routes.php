@@ -35,6 +35,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'logincontro::index');
 $routes->get('/register', 'logincontro::index2');
 $routes->post('/register', 'logincontro::register');
+$routes->get('/home', 'UserController::viewUser');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

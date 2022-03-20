@@ -62,7 +62,7 @@ class logincontro extends ResourceController // เปลี่ยนจาก C
         $data = $model->login($userName, $password);
         if ($data) {
             $session->set($data);
-            return redirect()->to('home');
+            return redirect()->to('/home');
         } else {
             $session->setFlashdata('msg', 'ไม่สามารถเข้าสู่ระบบได้ !!!');
             return redirect()->to('/');
